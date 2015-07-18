@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project Name="Ninject.Extensions.Factory" Path="src\Ninject.Extensions.Factory" Type="Library" Platforms="Android,iOS,Linux,MacOS,Ouya,Windows,WindowsPhone">
+  <Properties>
+    <CustomDefinitions>
+      <Platform Name="Android">TRACE;NO_PARTIAL_TRUST</Platform>
+      <Platform Name="iOS">TRACE;NO_PARTIAL_TRUST</Platform>
+      <Platform Name="Linux">TRACE;NO_PARTIAL_TRUST</Platform>
+      <Platform Name="MacOS">TRACE;NO_PARTIAL_TRUST</Platform>
+      <Platform Name="Ouya">TRACE;NO_PARTIAL_TRUST</Platform>
+      <Platform Name="PSMobile">TRACE;NO_PARTIAL_TRUST</Platform>
+      <Platform Name="Windows">TRACE;NO_PARTIAL_TRUST</Platform>
+      <Platform Name="Windows8">TRACE;NO_PARTIAL_TRUST</Platform>
+      <Platform Name="WindowsPhone">TRACE;NO_PARTIAL_TRUST</Platform>
+    </CustomDefinitions>
+  </Properties>
+  <References>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\packages\Castle.Core.3.2.0\lib\net35\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </References>
+  <Files>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Factory\IInstanceResolver.cs" />
+    <Compile Include="Factory\IInstanceProvider.cs" />
+    <Compile Include="Factory\InstanceResolver.cs" />
+    <Compile Include="Factory\StandardInstanceProvider.cs" />
+    <Compile Include="Factory\TypeMatchingArgumentInheritanceInstanceProvider.cs" />
+    <Compile Include="Func\ArgumentPositionCalculator.cs" />
+    <Compile Include="BindToExtensions.cs" />
+    <Compile Include="Func\ConstructorInfoExtensions.cs" />
+    <Compile Include="Factory\FactoryInterceptor.cs" />
+    <Compile Include="Func\FuncConstructorArgument.cs" />
+    <Compile Include="Func\FuncConstructorArgumentFactory.cs" />
+    <Compile Include="FuncModule.cs" />
+    <Compile Include="Func\FuncProvider.cs" />
+    <Compile Include="Func\FunctionFactory.cs" />
+    <Compile Include="Func\IArgumentPositionCalculator.cs" />
+    <Compile Include="Factory\IFactoryProxy.cs" />
+    <Compile Include="Func\IFunctionFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Factory\ProxyTargetParameter.cs" />
+  </Files>
+</Project>
