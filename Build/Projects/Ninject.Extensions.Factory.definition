@@ -14,9 +14,7 @@
     </CustomDefinitions>
   </Properties>
   <References>
-    <Reference Include="Castle.Core">
-      <HintPath>..\..\packages\Castle.Core.3.2.0\lib\net35\Castle.Core.dll</HintPath>
-    </Reference>
+    <Reference Include="Castle.Core" />
     <Reference Include="Ninject" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
